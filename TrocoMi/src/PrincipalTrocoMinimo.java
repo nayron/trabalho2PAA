@@ -79,8 +79,6 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
         jLabelNotas.setFont(new java.awt.Font("Serif", 1, 17)); // NOI18N
         jLabelNotas.setText("Notas:");
 
-        jTextFieldnotas.setText("100, 50, 25, 5, 1");
-
         jLabel3.setFont(new java.awt.Font("Serif", 1, 17)); // NOI18N
         jLabel3.setText("Valor Total:");
 
@@ -210,12 +208,15 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
 
         //   final Troco troco = new Troco();
         double conta, pago;
+      //  int notas[] = new int[5];
 
         try {
 
             conta = Double.parseDouble(jTextFieldVTotal.getText());
 
             pago = Double.parseDouble(jTextFieldValorPg.getText());
+            
+            
 
             System.out.printf("%s", calculaTroco(conta, pago));
 
@@ -314,13 +315,14 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
     private String calculaNotas(final double troco, String resultado) {
 
         //int nota[] = { 100, 50, 20, 10, 5, 2, 1 };
-         int nota[] = {100,50, 25, 5, 1};
+         //int nota[] = {100,50, 25, 5, 1};
+         String[] vet = jTextFieldnotas.getText().split(",");
+        int nota[] = new int[vet.length];
+        for(int i=0;i<nota.length;i++){
+            nota[i] = Integer.parseInt(vet[i]);
+            System.out.println("vetor: "+nota[i]);
+        }
         
-
-        stringUnica = Arrays.toString(nota);
-        jTextFieldnotas.setText(stringUnica);
-        //  System.out.println(stringUnica);
-
         int valor;
         int ct;
 
@@ -340,8 +342,8 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
 
     private String calculaMoedas(final double troco, String resultado) {
 
-        int centavos[] = {50, 25, 10, 5, 1};
-        // int centavos[] = {25, 10, 5, 1};
+      //  int centavos[] = {50, 25, 10, 5, 1};
+         int centavos[] = {100,25, 10, 5, 1};
 
         int contadorMoeda = 0;
         int valor;
