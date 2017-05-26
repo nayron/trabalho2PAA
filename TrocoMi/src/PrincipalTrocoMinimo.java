@@ -48,9 +48,9 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(130, 213, 65));
+        jPanel1.setBackground(new java.awt.Color(221, 158, 19));
 
-        jPanel2.setBackground(new java.awt.Color(228, 234, 53));
+        jPanel2.setBackground(new java.awt.Color(60, 126, 49));
 
         jLabel1.setFont(new java.awt.Font("Noto Sans CJK JP Thin", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(21, 9, 9));
@@ -73,7 +73,7 @@ public class PrincipalTrocoMinimo extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(228, 234, 53));
+        jPanel3.setBackground(new java.awt.Color(60, 126, 49));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Problema Troco Mínimo", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 18), new java.awt.Color(32, 18, 18))); // NOI18N
 
         jLabelNotas.setFont(new java.awt.Font("Serif", 1, 17)); // NOI18N

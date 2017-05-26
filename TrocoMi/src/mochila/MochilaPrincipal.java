@@ -21,8 +21,7 @@ public class MochilaPrincipal extends javax.swing.JFrame {
      */
     public MochilaPrincipal() {
         initComponents();
-        
-        
+
     }
 
     /**
@@ -62,7 +61,7 @@ public class MochilaPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(163, 163, 163)
                 .addComponent(jLabel3)
-                .addContainerGap(172, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -76,7 +75,7 @@ public class MochilaPrincipal extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Problea da Mochila", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("DejaVu Serif", 1, 14))); // NOI18N
 
         jTextAreaResultado.setColumns(20);
-        jTextAreaResultado.setFont(new java.awt.Font("Ubuntu", 0, 17)); // NOI18N
+        jTextAreaResultado.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jTextAreaResultado.setForeground(new java.awt.Color(44, 27, 27));
         jTextAreaResultado.setRows(5);
         jScrollPane1.setViewportView(jTextAreaResultado);
@@ -109,15 +108,14 @@ public class MochilaPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 526, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(Executar)
+                        .addComponent(Executar, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap())
+                        .addComponent(jButtonSair, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {Executar, jButtonLimpar, jButtonSair});
@@ -126,13 +124,15 @@ public class MochilaPrincipal extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 344, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 312, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Executar)
+                    .addComponent(Executar, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonLimpar)
                     .addComponent(jButtonSair)))
         );
+
+        jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {Executar, jButtonLimpar, jButtonSair});
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -140,9 +140,9 @@ public class MochilaPrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -151,8 +151,8 @@ public class MochilaPrincipal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -163,64 +163,59 @@ public class MochilaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void ExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExecutarActionPerformed
-           
 
-        System.out.print("\n Algoritmos Gulosos");
-        System.out.print("\n Algoritmo da Mochila\n");
+       
 
-        
-        int elementos = Integer.parseInt(JOptionPane.showInputDialog("ALGORITMO GULOSO\n\n"
+
+        int elementos = Integer.parseInt(JOptionPane.showInputDialog("MOCHILA-01\n"
                 + "Informe A quantidade de Elementos?"));
 
-        System.out.println("Digite a capacidade da mochila?");
-       // int CapMax = ler.nextInt();
-        
-        int CapMax = Integer.parseInt(JOptionPane.showInputDialog("ALGORITMO GULOSO\n\n"
+        int CapMax = Integer.parseInt(JOptionPane.showInputDialog("MOCHILA-01\n\n"
                 + "Informe agora a Capacidade da Mochila"));
-        
-      
-        
+        jTextAreaResultado.append("\n| Elementos = "+elementos+-1 +"    | Capacidade = "+CapMax+" |");
+
         int[] Item = new int[elementos + 1]; // vetor de indices de element5os
         int[] valor = new int[elementos + 1];// vetor de peso de elementos
-
+       
+        jTextAreaResultado.append("\n\n| Item:  ");
         for (int i = 1; i < elementos; i++) {
-    
-            Item[i] = Integer.parseInt(JOptionPane.showInputDialog("ALGORITMO GULOSO\n\n"
-                    + "Informe o peso do item "+i + " (em kg):"));
-            
-
+            Item[i] = Integer.parseInt(JOptionPane.showInputDialog("MOCHILA-01\n"
+                    + "Informe o PESO do item " + i + " (EM KG):"));
+           jTextAreaResultado.append(Item[i]+"  |  ");
         }
-        
+
+        jTextAreaResultado.append("\n| Valor: ");
         for (int i = 1; i < elementos; i++) {
            
-            valor[i] = Integer.parseInt(JOptionPane.showInputDialog("ALGORITMO GULOSO\n\n"
-                    + "Informe o valor o Item "+i+":"));
+            valor[i] = Integer.parseInt(JOptionPane.showInputDialog("\tMOCHILA-01\n"
+                    + "Informe o VALOR do item " + i + ":"));
+            jTextAreaResultado.append(valor[i]+"  | ");
 
         }
-        // jTextAreaResultado.append("Quantidade e Elementos :"+elementos+"\nCapacidade:"+CapMax+" \n\n"+"Peso");
-        // for (int i = 1; i < elementos; i++) {
-          //   jTextAreaResultado.append(" | "+Item[i]+"|");
-        // }
-         
-         InicializaMochila(Item, valor, CapMax, elementos);
-         
-         //Item[1] = 10;
+
+        InicializaMochila(Item, valor, CapMax, elementos);
+
+        //Item[1] = 10;
         //Item[2] = 20;
         //Item[3] = 30;
         //valor[1] = 60;
         //valor[2] = 100;
         //valor[3] = 120;
-        
+
     }//GEN-LAST:event_ExecutarActionPerformed
 
     private void jButtonLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLimparActionPerformed
         jTextAreaResultado.setText("");
+      //  jTextFieldCapMax.setText("");
+       // jTextFieldElementos.setText("");
+       // jTextFieldItens.setText("");
+       // jTextFieldValor.setText("");
     }//GEN-LAST:event_jButtonLimparActionPerformed
 
     private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairActionPerformed
@@ -316,20 +311,20 @@ public class MochilaPrincipal extends javax.swing.JFrame {
         /**
          * Imprime Item selecionados *
          */
-        System.out.println("\nItems selecionados : ");
-        jTextAreaResultado.append("\nItems selecionados :\n");
-        
+        System.out.println("\n\nItems selecionados : ");
+        jTextAreaResultado.append("\n\n\nItems selecionados :\n");
+
         int peso = 0, valorr = 0;
         for (int i = 1; i < elementos + 1; i++) {
             if (selected[i] == 1) {
                 System.out.println("Item " + i + "|" + "Peso " + Item[i] + "|" + "valor " + valor[i]);
-                jTextAreaResultado.append("Item " + i + " | " + "Peso " + Item[i] + " | " + "valor " + valor[i]+"\n");
+                jTextAreaResultado.append("Item " + i + " | " + "Peso " + Item[i] + " | " + "valor " + valor[i] + "\n");
                 peso += Item[i];
                 valorr += valor[i];
             }
         }
         System.out.println("Peso da mochila " + peso + " ,com valor de " + valorr);
-         jTextAreaResultado.append("Peso da mochila " + peso + " ,com valor de " + valorr+"\n");
+        jTextAreaResultado.append("Peso da mochila " + peso + " ,com valor de " + valorr + "\n");
         System.out.println();
 
     }
